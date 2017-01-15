@@ -12,6 +12,8 @@ sudo cp /vagrant/provisioning/configs/trello.local /etc/nginx/sites-available
 sudo ln -s /etc/nginx/sites-available/trello.local /etc/nginx/sites-enabled/trello.local
 sudo cp /vagrant/provisioning/configs/api.trello.local /etc/nginx/sites-available
 sudo ln -s /etc/nginx/sites-available/api.trello.local /etc/nginx/sites-enabled/api.trello.local
+sudo cp /vagrant/provisioning/configs/dev.trello.local /etc/nginx/sites-available
+sudo ln -s /etc/nginx/sites-available/dev.trello.local /etc/nginx/sites-enabled/dev.trello.local
 sudo mkdir /etc/nginx/includes
 sudo cp -R /vagrant/provisioning/configs/nginx-php-fpm.conf /etc/nginx/includes/php-fpm.conf
 sudo cp -R /vagrant/provisioning/configs/php-fpm.conf /etc/php/7.0/fpm/php-fpm.conf
